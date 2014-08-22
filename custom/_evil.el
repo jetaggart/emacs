@@ -1,4 +1,5 @@
 (evil-mode 1)
+(global-evil-surround-mode 1)
 
 ;; Set the initial evil state that certain major modes will be in.
 (evil-set-initial-state 'magit-log-edit-mode 'emacs)
