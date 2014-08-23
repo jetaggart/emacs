@@ -2,7 +2,11 @@
 
 (depends-on "ag")
 (depends-on "evil")
+(depends-on "evil-jumper")
+(depends-on "evil-leader")
+(depends-on "evil-nerd-commenter")
 (depends-on "evil-surround")
+(depends-on "evil-terminal-cursor-changer")
 (depends-on "flx-ido")
 (depends-on "grizzl")
 (depends-on "haml-mode")
