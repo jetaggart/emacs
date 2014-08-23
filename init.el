@@ -4,10 +4,12 @@
 
 (setq inhibit-startup-screen t)
 
-;disable backup
+; disable backup
 (setq backup-inhibited t)
-;disable auto save
+; disable auto save
 (setq auto-save-default nil)
+; auto-load all buffers on disk changes
+(global-auto-revert-mode t)
 
 (require 'cask "/usr/local/Cellar/cask/0.7.0/cask.el")
 (cask-initialize)
@@ -47,6 +49,5 @@
       (save-some-buffers t))
 
 (add-hook 'focus-out-hook 'save-all)
-(run-with-idle-timer 1 t 'save-all) 
 
 
