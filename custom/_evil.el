@@ -44,7 +44,10 @@
 		"w" 'save-buffer
 		"b d" 'kill-this-buffer
 		"v" (kbd "C-w v C-w l")
-		"s" (kbd "C-w s C-w j"))
+		"s" (kbd "C-w s C-w j") 
+		"h" help-map
+		"h h" 'help-for-help-internal)
+
 	      (after "magit-autoloads"
 		     (evil-leader/set-key
 		       "g s" 'magit-status
