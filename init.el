@@ -32,7 +32,6 @@
 
 (load "_evil.el")
 (load "_exec-path-from-shell.el")
-(load "_git-gutter-plus.el")
 (load "_haskell.el")
 (load "_ido.el")
 (load "_magit.el")
