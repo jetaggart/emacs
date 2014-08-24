@@ -12,6 +12,8 @@
 (depends-on "grizzl")
 (depends-on "haml-mode")
 (depends-on "haskell-mode")
+(depends-on "helm")
+(depends-on "helm-projectile")
 (depends-on "magit")
 (depends-on "markdown-mode")
 (depends-on "pallet")
