@@ -2,7 +2,7 @@
 
 ;; Copyright (C) 2008, Chaoji Li
 
-;; Author: Chaoji Li <lichaoji AT gmail DOT com>
+;; author: Chaoji Li <lichaoji AT gmail DOT com>
 ;; Version: 0.3
 ;; Date: May 17, 2008
 
@@ -61,7 +61,7 @@
 
 (defun turn-on-real-auto-save()
   (interactive)
-  (if (buffer-file-name)
+  (if (and (buffer-file-name) (not (string= (buffer-file-name) "COMMIT_EDITMSG")))
       (progn
 	(unless real-auto-save-timer
 	    (progn 
