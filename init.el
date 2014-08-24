@@ -13,6 +13,7 @@
 (load "_git-gutter.el")
 (load "_magit.el")
 (load "_projectile.el")
+(load "_real-auto-save.el")
 (load "_ruby.el")
 (load "_smartparens.el")
 (load "_web-mode.el")
