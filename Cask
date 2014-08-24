@@ -9,6 +9,7 @@
 (depends-on "evil-terminal-cursor-changer")
 (depends-on "flx-ido")
 (depends-on "git-gutter")
+(depends-on "grizzl")
 (depends-on "haml-mode")
 (depends-on "haskell-mode")
 (depends-on "magit")
