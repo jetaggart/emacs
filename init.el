@@ -32,13 +32,13 @@
 
 (load "_evil.el")
 (load "_exec-path-from-shell.el")
+(load "_git-gutter-plus.el")
 (load "_haskell.el")
 (load "_ido.el")
 (load "_magit.el")
 (load "_projectile.el")
 (load "_ruby.el")
 (load "_smartparens.el")
-(load "_sublimity.el")
 (load "_web-mode.el")
 (load "_yasnippet.el")
 
