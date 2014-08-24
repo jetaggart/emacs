@@ -61,7 +61,9 @@
 
 (defun turn-on-real-auto-save()
   (interactive)
-  (if (and (buffer-file-name) (not (string= (buffer-file-name) "COMMIT_EDITMSG")))
+  (if (and (buffer-file-name)
+	   (not (string-match "COMMIT_EDITMSG" (buffer-file-name))))
+
       (progn
 	(unless real-auto-save-timer
 	    (progn 
