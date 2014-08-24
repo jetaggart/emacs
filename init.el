@@ -34,6 +34,7 @@
 (load "_exec-path-from-shell.el")
 (load "_haskell.el")
 (load "_ido.el")
+(load "_git-gutter.el")
 (load "_magit.el")
 (load "_projectile.el")
 (load "_ruby.el")
