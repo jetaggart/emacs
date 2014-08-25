@@ -3,6 +3,8 @@
 (add-to-list 'auto-mode-alist '("\\.gemspec$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.ru$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("Gemfile$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("\\.erb$" . rspec-mode))
+(add-to-list 'auto-mode-alist '("\\.haml$" . rspec-mode))
 
 (require 'ruby-tools)
 (add-hook 'haml-mode-hook 'ruby-tools-mode)
