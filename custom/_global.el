@@ -15,6 +15,8 @@
 
 (setq inhibit-startup-screen t)
 
+(powerline-default-theme)
+
 ;; disable backup
 (setq backup-inhibited t)
 ;; disable auto save

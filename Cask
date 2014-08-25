@@ -21,6 +21,7 @@
 (depends-on "magit")
 (depends-on "markdown-mode")
 (depends-on "pallet")
+(depends-on "powerline")
 (depends-on "projectile")
 (depends-on "rspec-mode")
 (depends-on "ruby-tools")
