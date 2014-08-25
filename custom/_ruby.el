@@ -7,4 +7,7 @@
 (require 'ruby-tools)
 (add-hook 'haml-mode-hook 'ruby-tools-mode)
 
+(eval-after-load 'rspec-mode
+ '(rspec-install-snippets))
+
 
