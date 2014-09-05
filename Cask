@@ -23,6 +23,7 @@
 (depends-on "pallet")
 (depends-on "powerline")
 (depends-on "projectile")
+(depends-on "robe")
 (depends-on "rspec-mode")
 (depends-on "ruby-tools")
 (depends-on "smartparens")
