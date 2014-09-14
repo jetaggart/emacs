@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: have content 
+# key: hc
+# binding: direct-keybinding
+# --
+expect(page).to have_content("$1")

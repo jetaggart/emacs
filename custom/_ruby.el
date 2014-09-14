@@ -8,6 +8,7 @@
 
 (add-hook 'ruby-mode-hook 'robe-mode)
 (add-hook 'robe-mode-hook 'ac-robe-setup)
+(add-hook 'ruby-mode-hook 'ruby-refactor-mode-launch)
 
 (require 'ruby-tools)
 (add-hook 'haml-mode-hook 'ruby-tools-mode)
