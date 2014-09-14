@@ -1,4 +1,3 @@
-(setq gnus-permanently-visible-groups ".*INBOX")
 (bbdb-initialize 'gnus 'message)
 (bbdb-insinuate-message)
 (add-hook 'gnus-startup-hook 'bbdb-insinuate-gnus)
@@ -28,3 +27,5 @@
       gnus-thread-ignore-subject nil
       gnus-use-cross-reference nil
       gnus-nov-is-evil nil)
+
+(setq gnus-ignored-newsgroups "")

@@ -12,6 +12,7 @@
 (load "_haskell.el")
 (load "_helm.el")
 (load "_git-gutter.el")
+(load "_gnus.el")
 (load "_magit.el")
 (load "_org.el")
 (load "_projectile.el")
