@@ -19,6 +19,7 @@
 (depends-on "haml-mode")
 (depends-on "haskell-mode")
 (depends-on "helm")
+(depends-on "helm-descbinds")
 (depends-on "helm-projectile")
 (depends-on "magit")
 (depends-on "markdown-mode")
