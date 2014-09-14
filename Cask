@@ -5,6 +5,7 @@
 (depends-on "ag")
 (depends-on "auto-complete")
 (depends-on "auto-complete-exuberant-ctags")
+(depends-on "bbdb")
 (depends-on "elm-mode")
 (depends-on "evil")
 (depends-on "evil-jumper")
