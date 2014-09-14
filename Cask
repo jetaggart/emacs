@@ -1,6 +1,7 @@
 (source melpa)
 
 (depends-on "ac-etags")
+(depends-on "ac-haskell-process")
 (depends-on "ag")
 (depends-on "auto-complete")
 (depends-on "auto-complete-exuberant-ctags")

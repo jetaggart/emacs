@@ -2,6 +2,9 @@
 (global-auto-complete-mode t)
 (ac-config-default)
 
+(ac-set-trigger-key "TAB")
+(ac-set-trigger-key "<tab>")
+
 (define-key ac-completing-map (kbd "ESC") 'ac-stop)
 (setq ac-delay 0.125
       ac-auto-show-menu 0.25
