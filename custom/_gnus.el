@@ -39,5 +39,6 @@
 (setq gnus-thread-ignore-subject t)
 
 (setq gnus-message-archive-group "nnimap:INBOX.Sent Items")
+(setq gnus-gcc-mark-as-read t)
 
 (setq gnus-ignored-newsgroups "")

@@ -8,6 +8,7 @@
 
 (load "_auto-complete.el")
 (load "_evil.el")
+(load "_erc.el")
 (load "_exec-path-from-shell.el")
 (load "_haskell.el")
 (load "_helm.el")
