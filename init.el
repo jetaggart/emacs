@@ -22,6 +22,7 @@
 (load "_smartparens.el")
 (load "_sass.el")
 (load "_web-mode.el")
+(load "_winner.el")
 (load "_yasnippet.el")
 
 (custom-set-variables
