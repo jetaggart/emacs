@@ -28,6 +28,7 @@
 (define-key evil-insert-state-map [remap newline-and-indent] 'newline-and-indent)
 
 ;; Window commands
+(define-key evil-normal-state-map (kbd "C-w q") 'evil-window-delete)
 (define-key evil-normal-state-map (kbd "C-h") 'evil-window-left)
 (define-key evil-normal-state-map (kbd "C-j") 'evil-window-down)
 (define-key evil-normal-state-map (kbd "C-k") 'evil-window-up)
