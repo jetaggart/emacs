@@ -6,6 +6,7 @@
 (setq yas-before-expand-snippet-hook (lambda () (auto-complete-mode -1)))
 (setq yas-after-exit-snippet-hook (lambda () (auto-complete-mode 1)))
 
+
 (define-key ac-completing-map (kbd "C-n") 'ac-next)
 (define-key ac-completing-map (kbd "C-p") 'ac-previous)
 
@@ -27,6 +28,7 @@
 			   ac-source-words-in-buffer
 			   ac-source-filename
 			   ac-source-imenu
-			   ac-source-etags
 			   ac-source-dictionary
 			   ac-source-words-in-same-mode-buffers))
+(after 'auto-complete
+  (add-to-list 'ac-sources 'ac-source-etags))
