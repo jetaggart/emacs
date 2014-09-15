@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: have no content 
+# key: hnc
+# binding: direct-keybinding
+# --
+expect(page).to have_no_content("$1")

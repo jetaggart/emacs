@@ -1,0 +1,8 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: scenario
+# key: sc
+# binding: direct-keybinding
+# --
+scenario "$1" do
+  $2
+end

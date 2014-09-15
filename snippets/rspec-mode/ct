@@ -1,8 +1,8 @@
 # -*- mode: snippet; require-final-newline: nil -*-
-# name: des
-# key: des
+# name: context
+# key: ct
 # binding: direct-keybinding
 # --
-describe "$1" do
+context "$1" do
   $2
 end
