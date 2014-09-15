@@ -41,3 +41,9 @@
       (process-send-string proc text)
       (process-send-eof proc))))
 
+;; more readable :)
+(when (display-graphic-p)
+  (setq mac-command-modifier 'meta)
+  (setq mac-option-modifier 'super)
+  (setq mac-control-modifier 'control) 
+  (setq ns-function-modifier 'hyper))

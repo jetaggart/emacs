@@ -4,8 +4,8 @@
 (setq projectile-indexing-method 'native)
 (setq projectile-enable-caching t)
 
-(global-set-key (kbd "M-p") 'helm-projectile)
-
 (after "evil-leader-autoloads"
   (evil-leader/set-key
-    "g p" 'projectile-switch-project))
+    "p" 'projectile-switch-project
+    "b" 'projectile-switch-to-buffer
+    "f" 'helm-projectile))
