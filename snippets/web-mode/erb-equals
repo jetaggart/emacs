@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: erb equals
+# key: =
+# binding: direct-keybinding
+# --
+<%= $1 %>

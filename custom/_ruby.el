@@ -10,7 +10,6 @@
 
 (add-hook 'ruby-mode-hook 'robe-mode)
 (add-hook 'web-mode-hook 'rspec-mode)
-(add-hook 'robe-mode-hook 'ac-robe-setup)
 (add-hook 'ruby-mode-hook 'ruby-refactor-mode-launch)
 
 (require 'ruby-tools)

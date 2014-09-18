@@ -1,1 +1,1 @@
-(add-to-list 'auto-mode-alist '("\\.scss\\'" . sass-mode))
+(setq scss-compile-at-save nil)

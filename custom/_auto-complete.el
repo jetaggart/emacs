@@ -30,5 +30,11 @@
 			   ac-source-imenu
 			   ac-source-dictionary
 			   ac-source-words-in-same-mode-buffers))
-(after 'auto-complete
-  (add-to-list 'ac-sources 'ac-source-etags))
+(custom-set-variables
+  '(ac-etags-requires 1))
+
+(eval-after-load "etags"
+  '(progn
+      (ac-etags-setup)))
+
+(add-hook 'prog-mode-hook 'ac-etags-ac-setup)

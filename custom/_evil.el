@@ -26,6 +26,7 @@
 
 (define-key evil-insert-state-map [remap newline] 'newline)
 (define-key evil-insert-state-map [remap newline-and-indent] 'newline-and-indent)
+(define-key evil-insert-state-map (kbd "C-e") 'end-of-line)
 
 ;; Window commands
 (define-key evil-normal-state-map (kbd "C-w q") 'evil-window-delete)
@@ -48,7 +49,13 @@
 		"v" (kbd "C-w v C-w l")
 		"s" (kbd "C-w s C-w j") 
 		"h" help-map
-		"h h" 'help-for-help-internal)
+		"h h" 'help-for-help-internal
+
+		;; rspec
+		"r l" (kbd "C-c , r")
+		"r f" (kbd "C-c , v")
+		"r s" (kbd "C-c , s")
+		"r a" (kbd "C-c , a"))
 
 	      (after "magit-autoloads"
 		     (evil-leader/set-key
