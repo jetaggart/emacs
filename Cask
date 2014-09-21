@@ -11,6 +11,7 @@
 (depends-on "evil-jumper")
 (depends-on "evil-leader")
 (depends-on "evil-nerd-commenter")
+(depends-on "evil-org")
 (depends-on "evil-surround")
 (depends-on "evil-terminal-cursor-changer")
 (depends-on "exec-path-from-shell")

@@ -14,7 +14,7 @@
 (define-key ac-completing-map (kbd "ESC") 'evil-normal-state)
 (evil-make-intercept-map ac-completing-map)
 
-(setq ac-delay 0.1
+(setq ac-delay 0.125
       ac-auto-show-menu 3
       ac-auto-start 3
       ac-quick-help-delay 2.0
@@ -24,11 +24,9 @@
       ac-limit 10
       ac-disable-faces nil)
 
-(setq-default ac-sources '(ac-source-abbrev
-			   ac-source-words-in-buffer
+(setq-default ac-sources '(ac-source-words-in-buffer
 			   ac-source-filename
 			   ac-source-imenu
-			   ac-source-dictionary
 			   ac-source-words-in-same-mode-buffers))
 (custom-set-variables
   '(ac-etags-requires 1))

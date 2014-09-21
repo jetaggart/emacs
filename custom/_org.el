@@ -1,4 +1,5 @@
 (require 'org)
+
 (define-key global-map "\C-cl" 'org-store-link)
 (define-key global-map "\C-ca" 'org-agenda)
 (setq org-log-done t)
@@ -27,3 +28,7 @@
  '(org-level-4 ((t (:inherit outline-4 :height 1.0))))
  '(org-level-5 ((t (:inherit outline-5 :height 1.0))))
  )
+
+(require 'evil-org)
+(add-hook 'org-mode-hook 'evil-org-mode) ;; only load with org-mode
+
