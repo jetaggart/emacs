@@ -30,17 +30,6 @@
 (global-linum-mode t)
 (setq linum-format "%4d \u2502 ")
 
-
-;; copy paste to os x in tmux
-(defun copy-from-osx ()
-  (shell-command-to-string "pbpaste"))
-
-(defun paste-to-osx (text &optional push)
-  (let ((process-connection-type nil))
-    (let ((proc (start-process "pbcopy" "*Messages*" "pbcopy")))
-      (process-send-string proc text)
-      (process-send-eof proc))))
-
 ;; more readable :)
 (when (display-graphic-p)
   (setq mac-command-modifier 'meta)
