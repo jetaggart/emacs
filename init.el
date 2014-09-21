@@ -7,7 +7,7 @@
 (load "_global.el")
 (load "_evil.el")
 
-(load "_auto-complete.el")
+(load "_company.el")
 (load "_erc.el")
 (load "_exec-path-from-shell.el")
 (load "_haskell.el")
