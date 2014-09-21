@@ -1,4 +1,9 @@
 emacs
 =====
 
-Personal emacs config. Just clone into `~/.emacs.d` and boot emacs. This config should work for terminal and GUI instances.
+Personal emacs config. Just clone into `~/.emacs.d`. This config works in the terminal and GUI.
+
+* `brew install cask`
+* `cask install`
+* Enjoy!
+
