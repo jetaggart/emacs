@@ -33,7 +33,22 @@
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
    (quote
-    ("1e7e097ec8cb1f8c3a912d7e1e0331caeed49fef6cff220be63bd2a6ba4cc365" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" default))))
+    ("1e7e097ec8cb1f8c3a912d7e1e0331caeed49fef6cff220be63bd2a6ba4cc365" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" default)))
+ '(safe-local-variable-values
+   (quote
+    ((hamlet/basic-offset . 4)
+     (haskell-process-use-ghci . t)
+     (haskell-indent-spaces . 4)))))
 
 (load-theme 'solarized-light)
-(custom-set-faces (if (not window-system) '(default ((t (:background "nil"))))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(default ((t (:background "nil"))))
+ '(org-level-1 ((t (:inherit outline-1 :height 1.0))))
+ '(org-level-2 ((t (:inherit outline-2 :height 1.0))))
+ '(org-level-3 ((t (:inherit outline-3 :height 1.0))))
+ '(org-level-4 ((t (:inherit outline-4 :height 1.0))))
+ '(org-level-5 ((t (:inherit outline-5 :height 1.0)))))

@@ -15,6 +15,9 @@
 
 (setq inhibit-startup-screen t)
 
+;; always use tabs
+(setq-default indent-tabs-mode nil)
+
 ;; disable backup
 (setq backup-inhibited t)
 ;; disable auto save

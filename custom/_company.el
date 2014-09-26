@@ -10,4 +10,7 @@
 ;; invert the navigation direction if the the completion popup-isearch-match
 ;; is displayed on top (happens near the bottom of windows)
 (setq company-tooltip-flip-when-above t)
+
+(add-to-list 'company-backends 'company-ghc)
+
 (global-company-mode 1)
