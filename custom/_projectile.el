@@ -8,4 +8,5 @@
   (evil-leader/set-key
     "p" 'projectile-switch-project
     "b" 'projectile-switch-to-buffer
-    "f" 'helm-projectile))
+    "h" 'helm-projectile
+    "f" 'projectile-find-file))
