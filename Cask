@@ -28,6 +28,7 @@
 (depends-on "projectile")
 (depends-on "robe")
 (depends-on "rspec-mode")
+(depends-on "ruby-hash-syntax")
 (depends-on "ruby-refactor")
 (depends-on "ruby-tools")
 (depends-on "sass-mode")

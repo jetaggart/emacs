@@ -6,6 +6,7 @@
 ;; don't conflict with evil-mode
 (define-key company-active-map (kbd "C-n") 'company-select-next)
 (define-key company-active-map (kbd "C-p") 'company-select-previous)
+(define-key company-active-map (kbd "TAB") 'company-complete-selection)
 
 ;; invert the navigation direction if the the completion popup-isearch-match
 ;; is displayed on top (happens near the bottom of windows)
