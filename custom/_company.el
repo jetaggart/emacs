@@ -1,7 +1,8 @@
 (require 'company)
+(setq company-auto-complete t)
 (setq company-idle-delay 0.1)
 (setq company-tooltip-limit 10)
-(setq company-minimum-prefix-length 2)
+(setq company-minimum-prefix-length 3)
 
 ;; don't conflict with evil-mode
 (define-key company-active-map (kbd "C-n") 'company-select-next)
@@ -15,3 +16,4 @@
 (add-to-list 'company-backends 'company-ghc)
 
 (global-company-mode 1)
+

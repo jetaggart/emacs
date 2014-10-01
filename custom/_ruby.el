@@ -19,3 +19,5 @@
  '(rspec-install-snippets))
 
 
+(push 'company-robe company-backends)
+
