@@ -6,5 +6,6 @@ bbdb
 recentf
 url/
 bookmarks
+session.*
 
 auto-save-list/
