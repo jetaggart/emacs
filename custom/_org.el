@@ -6,11 +6,14 @@
 (setq org-log-done t)
 
 (setq org-image-actual-width '(400))
+(setq org-startup-with-inline-images t)
+(setq org-startup-with-latex-preview t)
 (setq org-startup-indented t)
 (setq org-indent-mode t)
 (setq org-ellipsis " \u25b6" )
 (setq org-hide-leading-stars t)
 (setq org-special-ctrl-a/e t)
+(setq org-link-file-path-type 'relative)
 
 (setq org-agenda-files '("~/org"))
 (setq org-default-notes-file (concat org-directory "/todo.org"))
