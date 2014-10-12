@@ -16,8 +16,12 @@
 (add-hook 'haml-mode-hook 'ruby-tools-mode)
 
 (eval-after-load 'rspec-mode
- '(rspec-install-snippets))
+  '(rspec-install-snippets))
 
+(eval-after-load 'robe-mode
+  '(local-key-binding (kbd "M-.") 'robe-jump))
 
 (push 'company-robe company-backends)
 
+(defadvice inf-ruby-console-auto (before activate-rvm-for-robe activate)
+  (rvm-activate-corresponding-ruby))

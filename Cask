@@ -31,6 +31,7 @@
 (depends-on "ruby-hash-syntax")
 (depends-on "ruby-refactor")
 (depends-on "ruby-tools")
+(depends-on "rvm")
 (depends-on "sass-mode")
 (depends-on "scss-mode")
 (depends-on "smartparens")
