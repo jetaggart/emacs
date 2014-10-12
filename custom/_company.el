@@ -1,4 +1,5 @@
 (require 'company)
+
 (setq company-auto-complete t)
 (setq company-idle-delay 0.1)
 (setq company-tooltip-limit 10)
@@ -15,5 +16,4 @@
 
 (add-to-list 'company-backends 'company-ghc)
 
-(global-company-mode 1)
-
+(global-company-mode '(not org-mode))
