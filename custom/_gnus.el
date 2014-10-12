@@ -1,5 +1,3 @@
-(load "_osx-bbdb.el")
-
 (bbdb-initialize 'gnus 'message)
 (bbdb-insinuate-message)
 (add-hook 'gnus-startup-hook 'bbdb-insinuate-gnus)
