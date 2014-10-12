@@ -16,6 +16,6 @@
 
 (add-to-list 'company-backends 'company-ghc)
 
-(add-hook 'lisp-mode-hook 'company-mode)
+(add-hook 'emacs-lisp-mode-hook 'company-mode)
 (add-hook 'ruby-mode-hook 'company-mode)
 (add-hook 'haskell-mode-hook 'company-mode)
