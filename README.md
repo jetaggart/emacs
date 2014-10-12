@@ -3,7 +3,7 @@ emacs
 
 Personal emacs config. Just clone into `~/.emacs.d`. This config works in the terminal and GUI.
 
-* `brew install cask`
+* Install cask
 * `cask install`
 * Enjoy!
 
