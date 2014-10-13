@@ -1,5 +1,6 @@
 (require 'org)
 (require 'evil-org)
+(require 'org-drill)
 
 ;; recursively find .org files in provided directory
 ;; modified from an Emacs Lisp Intro example

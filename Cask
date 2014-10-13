@@ -1,4 +1,5 @@
 (source melpa)
+(source org)
 
 (depends-on "ag")
 (depends-on "bbdb")
@@ -24,6 +25,7 @@
 (depends-on "helm-projectile")
 (depends-on "magit")
 (depends-on "markdown-mode")
+(depends-on "org-plus-contrib")
 (depends-on "pallet")
 (depends-on "projectile")
 (depends-on "robe")
