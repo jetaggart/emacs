@@ -1,0 +1,8 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: latex equation
+# key: eq
+# binding: direct-keybinding
+# --
+\begin{equation}
+$1
+\end{equation}
