@@ -29,6 +29,7 @@
 (setq x-select-enable-clipboard t)
 
 (define-key global-map (kbd "RET") 'newline-and-indent)
+(define-key global-map (kbd "C-x C-c") nil)
 
 ;; more readable :)
 (when (display-graphic-p)
