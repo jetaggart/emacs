@@ -31,6 +31,13 @@
 (define-key global-map (kbd "RET") 'newline-and-indent)
 (define-key global-map (kbd "C-x C-c") nil)
 
+;; Align with spaces only
+(defadvice align-regexp (around align-regexp-with-spaces)
+  "Never use tabs for alignment."
+  (let ((indent-tabs-mode nil))
+    ad-do-it))
+(ad-activate 'align-regexp)
+
 ;; more readable :)
 (when (display-graphic-p)
   (setq mac-command-modifier 'meta)
