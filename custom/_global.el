@@ -32,6 +32,7 @@
 (define-key global-map (kbd "C-x C-c") nil)
 
 ;; Align with spaces only
+;; http://stackoverflow.com/questions/915985/in-emacs-how-to-line-up-equals-signs-in-a-series-of-initialization-statements
 (defadvice align-regexp (around align-regexp-with-spaces)
   "Never use tabs for alignment."
   (let ((indent-tabs-mode nil))
