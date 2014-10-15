@@ -39,6 +39,15 @@
     ad-do-it))
 (ad-activate 'align-regexp)
 
+(defun my-align-single-equals ()
+  "Align on a single equals sign (with a space either side)."
+  (interactive)
+  (align-regexp
+   (region-beginning) (region-end)
+   "\\(\\s-*\\) =" 1 0 nil))
+
+(global-set-key (kbd "C-c =") 'my-align-single-equals)
+
 ;; more readable :)
 (when (display-graphic-p)
   (setq mac-command-modifier 'meta)
