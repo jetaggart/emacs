@@ -2,6 +2,7 @@
 (require 'evil-org)
 (require 'org-drill)
 (require 'ob-latex)
+(require 'ob-gnuplot)
 
 
 ;; recursively find .org files in provided directory
@@ -31,8 +32,8 @@ If FILEXT is provided, return files with extension FILEXT instead."
 (define-key global-map "\C-ca" 'org-agenda)
 (setq org-log-done t)
 
+(add-to-list 'org-latex-packages-alist '("" "tikz"))
 (setq org-latex-create-formula-image-program 'imagemagick)
-(setq org-export-latex-packages-alist '("" "tikz"))
 (setq org-latex-image-default-width "")
 (setq org-startup-with-inline-images t)
 (setq org-startup-with-latex-preview t)

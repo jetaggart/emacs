@@ -16,6 +16,7 @@
 (depends-on "exec-path-from-shell")
 (depends-on "fuzzy")
 (depends-on "git-gutter")
+(depends-on "gnuplot")
 (depends-on "grizzl")
 (depends-on "haml-mode")
 (depends-on "hamlet-mode")
