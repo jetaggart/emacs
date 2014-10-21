@@ -15,9 +15,6 @@
 (require 'ruby-tools)
 (add-hook 'haml-mode-hook 'ruby-tools-mode)
 
-(eval-after-load 'rspec-mode
-  '(rspec-install-snippets))
-
 (eval-after-load 'robe-mode
   '(local-key-binding (kbd "M-.") 'robe-jump))
 
