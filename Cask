@@ -39,6 +39,7 @@
 (depends-on "scss-mode")
 (depends-on "smartparens")
 (depends-on "solarized-theme")
+(depends-on "sublimity")
 (depends-on "web-mode")
 (depends-on "yasnippet")
 (depends-on "zencoding-mode")
