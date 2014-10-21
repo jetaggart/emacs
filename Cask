@@ -16,7 +16,6 @@
 (depends-on "exec-path-from-shell")
 (depends-on "fuzzy")
 (depends-on "git-commit-mode")
-(depends-on "git-gutter")
 (depends-on "gnuplot")
 (depends-on "grizzl")
 (depends-on "haml-mode")
