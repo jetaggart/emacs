@@ -34,9 +34,6 @@
  '(custom-safe-themes
    (quote
     ("1e7e097ec8cb1f8c3a912d7e1e0331caeed49fef6cff220be63bd2a6ba4cc365" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" default)))
- '(org-agenda-files
-   (quote
-    ("/home/jetaggart/org/todo.org_archive" "/home/jetaggart/org/todo.org" "/home/jetaggart/org/research/courses/learn-to-learn.org" "/home/jetaggart/org/research/mathematics/concepts/functions.org" "/home/jetaggart/org/reading.org" "/home/jetaggart/org/bookmarks.org")))
  '(org-drill-optimal-factor-matrix (quote ((1 (2.6 . 4.14) (1.7000000000000002 . 3.44)))))
  '(org-format-latex-options
    (quote
