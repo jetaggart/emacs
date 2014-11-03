@@ -25,6 +25,8 @@
 ;; auto-load all buffers on disk changes
 (global-auto-revert-mode t)
 
+(global-linum-mode t)
+
 ;; Enable copy and pasting from clipboard
 (setq x-select-enable-clipboard t)
 
