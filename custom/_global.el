@@ -48,7 +48,17 @@
 
 (global-set-key (kbd "C-c =") 'my-align-single-equals)
 
-;; more readable :)
+(defun copy-current-line-position-to-clipboard ()
+  "Copy current line in file to clipboard as '</path/to/file>:<line-number>'"
+  (interactive)
+  (let ((path-with-line-number
+         (concat (buffer-file-name) ":" (number-to-string (line-number-at-pos)))))
+    (x-select-text path-with-line-number)
+    (message (concat path-with-line-number " copied to clipboard"))))
+
+(define-key global-map (kbd "M-l") 'copy-current-line-position-to-clipboard)
+
+;; mac friendly
 (when (display-graphic-p)
   (setq mac-command-modifier 'meta)
   (setq mac-option-modifier 'super)
