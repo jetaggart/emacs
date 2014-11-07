@@ -18,6 +18,7 @@
 (eval-after-load 'robe-mode
   '(local-key-binding (kbd "M-.") 'robe-jump))
 
+(add-hook 'after-init-hook 'inf-ruby-switch-setup) 
 (defadvice inf-ruby-console-auto (before activate-rvm-for-robe activate)
   (rvm-activate-corresponding-ruby))
 
