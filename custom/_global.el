@@ -56,7 +56,6 @@
   (interactive)
   (let ((path-with-line-number
          (concat (buffer-file-name) ":" (number-to-string (line-number-at-pos)))))
-    (x-select-text path-with-line-number)
     (kill-new path-with-line-number)
     (message (concat path-with-line-number " copied to clipboard"))))
 
