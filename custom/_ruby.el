@@ -12,6 +12,8 @@
 (add-hook 'web-mode-hook 'rspec-mode)
 (add-hook 'ruby-mode-hook 'ruby-refactor-mode-launch)
 
+(setq rspec-auto-scroll nil)
+
 (require 'ruby-tools)
 (add-hook 'haml-mode-hook 'ruby-tools-mode)
 

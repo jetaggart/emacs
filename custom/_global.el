@@ -18,6 +18,9 @@
 ;; always use tabs
 (setq-default indent-tabs-mode nil)
 
+;; always truncate lines
+(setq-default truncate-lines t)
+
 ;; disable backup
 (setq backup-inhibited t)
 ;; disable auto save
@@ -54,13 +57,8 @@
   (let ((path-with-line-number
          (concat (buffer-file-name) ":" (number-to-string (line-number-at-pos)))))
     (x-select-text path-with-line-number)
+    (kill-new path-with-line-number)
     (message (concat path-with-line-number " copied to clipboard"))))
 
 (define-key global-map (kbd "M-l") 'copy-current-line-position-to-clipboard)
 
-;; mac friendly
-(when (display-graphic-p)
-  (setq mac-command-modifier 'meta)
-  (setq mac-option-modifier 'super)
-  (setq mac-control-modifier 'control) 
-  (setq ns-function-modifier 'hyper))
