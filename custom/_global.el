@@ -70,5 +70,5 @@
       (process-send-string proc text)
       (process-send-eof proc))))
 
-;; (setq interprogram-cut-function 'mac-paste)
-;; (setq interprogram-paste-function 'mac-copy)
+(setq interprogram-cut-function 'mac-paste)
+(setq interprogram-paste-function 'mac-copy)
