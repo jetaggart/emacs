@@ -15,6 +15,10 @@
 
 (setq inhibit-startup-screen t)
 
+;; global linum mode
+(global-linum-mode)
+(setq linum-format "%4d \u2502 ")
+
 ;; always use tabs
 (setq-default indent-tabs-mode nil)
 
