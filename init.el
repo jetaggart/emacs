@@ -27,6 +27,10 @@
 (load "_yasnippet.el")
 
 (custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  '(custom-safe-themes
    (quote
     ("013e87003e1e965d8ad78ee5b8927e743f940c7679959149bbee9a15bd286689" "19d84b6b3d8ff178fcf8c19ae97bd1b6c74bb07903d5856caa36b107ce923134" "3b819bba57a676edf6e4881bd38c777f96d1aa3b3b5bc21d8266fa5b0d0f1ebf" "1e7e097ec8cb1f8c3a912d7e1e0331caeed49fef6cff220be63bd2a6ba4cc365" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" default)))
@@ -37,3 +41,10 @@
                  ("begin" "$1" "$" "$$" "\\(" "\\["))))
  '(safe-local-variable-values (quote ((hamlet/basic-offset . 4))))
  '(tab-width 2))
+
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(web-mode-symbol-face ((t (:foreground "color-37")))))
