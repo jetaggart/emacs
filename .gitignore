@@ -10,3 +10,5 @@ session.*
 .org-id-locations
 
 auto-save-list/
+
+eshell/
