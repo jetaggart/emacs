@@ -11,6 +11,7 @@
 (load "_evil.el")
 
 (load "_exec-path-from-shell.el")
+(load "_eshell.el")
 (load "_haskell.el")
 (load "_helm.el")
 (load "_javascript.el")
