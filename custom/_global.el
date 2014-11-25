@@ -55,6 +55,9 @@
 
 (global-set-key (kbd "C-c =") 'my-align-single-equals)
 
+;; mac like backspace
+(global-set-key (kbd "<s-backspace>") 'backward-kill-word)
+
 (defun copy-current-line-position-to-clipboard ()
   "Copy current line in file to clipboard as '</path/to/file>:<line-number>'"
   (interactive)
