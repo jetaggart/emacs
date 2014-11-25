@@ -1,6 +1,6 @@
 # -*- mode: snippet; require-final-newline: nil -*-
 # name: erb percent
-# key: %
+# key: <%
 # binding: direct-keybinding
 # --
 <% $1 %>
