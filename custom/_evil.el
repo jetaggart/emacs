@@ -1,3 +1,6 @@
+;; default vim for up
+(setq-default evil-want-C-u-scroll t)
+
 (evil-mode 1)
 (global-evil-surround-mode 1)
 (global-evil-leader-mode t)
@@ -46,17 +49,28 @@
     (evil-leader/set-key
       "w" 'save-buffer
       "m" 'helm-M-x
-      "b d" 'kill-this-buffer
+      "bd" 'kill-this-buffer
       "v" (kbd "C-w v C-w l")
       "s" (kbd "C-w s C-w j") 
       "h" help-map
-      "h h" 'help-for-help-internal
+      "hh" 'help-for-help-internal
+      "u" 'universal-argument
 
       ;; rspec
-      "r l" (kbd "C-c , r")
-      "r f" (kbd "C-c , v")
-      "r s" (kbd "C-c , s")
-      "r a" (kbd "C-c , a"))
+      "rl" (kbd "C-c , r")
+      "rf" (kbd "C-c , v")
+      "rs" (kbd "C-c , s")
+      "ra" (kbd "C-c , a")
+
+      "ij" (lambda (count)
+             "Insert a new line below with no identation."
+             (interactive "p")
+             (save-excursion
+               (evil-move-end-of-line)
+               (while (> count 0)
+                 (insert "\n")
+                 (setq count (1- count)))))
+      "ik" 'evil-insert-line-above)
 
     (after "magit-autoloads"
       (evil-leader/set-key

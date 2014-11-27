@@ -14,10 +14,19 @@
   (when (fboundp mode) (funcall mode -1)))
 
 (setq inhibit-startup-screen t)
+(setq initial-major-mode 'text-mode)
+
+;; turn on electric-indent-mode for both 24.3 and 24.4
+(electric-indent-mode)
 
 ;; global linum mode
 (global-linum-mode)
-(setq linum-format "%4d \u2502 ")
+(setq linum-format "%4d ")
+
+;; y/n is good enough
+(fset 'yes-or-no-p 'y-or-n-p)
+
+(setq x-underline-at-descent-line t)
 
 ;; instantly display current keystrokes in mini buffer
 (setq echo-keystrokes 0.02)
@@ -32,14 +41,25 @@
 (setq backup-inhibited t)
 ;; disable auto save
 (setq auto-save-default nil)
+
 ;; auto-load all buffers on disk changes
 (global-auto-revert-mode t)
+;; revert dirs
+(setq global-auto-revert-non-file-buffers t)
+(setq auto-revert-verbose nil)
+
+;; no bells
+(custom-set-variables '(ring-bell-function 'ignore))
+(setq visible-bell nil)
 
 ;; Enable copy and pasting from clipboard
 (setq x-select-enable-clipboard t)
 
 (define-key global-map (kbd "RET") 'newline-and-indent)
 (define-key global-map (kbd "C-x C-c") nil)
+
+;; don't gc so much, this is the future!
+(setq gc-cons-threshold 20000000)
 
 ;; Align with spaces only
 ;; http://stackoverflow.com/questions/915985/in-emacs-how-to-line-up-equals-signs-in-a-series-of-initialization-statements
@@ -74,3 +94,11 @@
 (when (display-graphic-p)
   (setq mac-command-modifier 'meta)
   (setq mac-option-modifier 'super))
+
+;; seems pointless to warn. There's always undo.
+(put 'narrow-to-region 'disabled nil)
+(put 'upcase-region 'disabled nil)
+(put 'downcase-region 'disabled nil)
+(put 'erase-buffer 'disabled nil)
+(put 'scroll-left 'disabled nil)
+(put 'dired-find-alternate-file 'disabled nil)
