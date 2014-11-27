@@ -19,6 +19,9 @@
 (global-linum-mode)
 (setq linum-format "%4d \u2502 ")
 
+;; instantly display current keystrokes in mini buffer
+(setq echo-keystrokes 0.02)
+
 ;; always use tabs
 (setq-default indent-tabs-mode nil)
 
