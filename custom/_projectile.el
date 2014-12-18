@@ -6,9 +6,9 @@
 
 (after "evil-leader-autoloads"
   (evil-leader/set-key
-    "s" 'projectile-ag
+    "s" 'helm-projectile-ag
     "r" 'projectile-replace
-    "p" 'projectile-switch-project
-    "b" 'projectile-switch-to-buffer
+    "p" 'helm-projectile-switch-project
+    "b" 'helm-projectile-switch-to-buffer
     "h" 'helm-projectile
-    "f" 'projectile-find-file))
+    "f" 'helm-projectile-find-file))
