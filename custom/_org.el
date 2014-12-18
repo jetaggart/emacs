@@ -1,6 +1,5 @@
 (require 'org)
 (require 'evil-org)
-(require 'org-drill)
 (require 'ob-latex)
 (require 'ob-gnuplot)
 
