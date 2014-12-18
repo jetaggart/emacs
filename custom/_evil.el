@@ -56,11 +56,12 @@
       "h h" 'help-for-help-internal
       "u" 'universal-argument
 
-      ;; rspec
-      "r l" (kbd "C-c , r")
-      "r f" (kbd "C-c , v")
-      "r s" (kbd "C-c , s")
-      "r a" (kbd "C-c , a")
+      "t l" (kbd "C-c , r")
+      "t f" (kbd "C-c , v")
+      "t s" (kbd "C-c , s")
+      "t a" (kbd "C-c , a")
+
+      "g g" 'helm-google-suggest
 
       "i j" (lambda (count)
              "Insert a new line below with no identation."
