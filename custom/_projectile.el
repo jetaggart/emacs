@@ -6,6 +6,8 @@
 
 (after "evil-leader-autoloads"
   (evil-leader/set-key
+    "s" 'projectile-ag
+    "r" 'projectile-replace
     "p" 'projectile-switch-project
     "b" 'projectile-switch-to-buffer
     "h" 'helm-projectile

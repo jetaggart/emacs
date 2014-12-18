@@ -49,28 +49,27 @@
     (evil-leader/set-key
       "w" 'save-buffer
       "m" 'helm-M-x
-      "bd" 'kill-this-buffer
-      "v" (kbd "C-w v C-w l")
-      "s" (kbd "C-w s C-w j") 
+      "b d" 'kill-this-buffer
+      "e v" (kbd "C-w v C-w l")
+      "e s" (kbd "C-w s C-w j") 
       "h" help-map
-      "hh" 'help-for-help-internal
+      "h h" 'help-for-help-internal
       "u" 'universal-argument
 
       ;; rspec
-      "rl" (kbd "C-c , r")
-      "rf" (kbd "C-c , v")
-      "rs" (kbd "C-c , s")
-      "ra" (kbd "C-c , a")
+      "r l" (kbd "C-c , r")
+      "r f" (kbd "C-c , v")
+      "r s" (kbd "C-c , s")
+      "r a" (kbd "C-c , a")
 
-      "ij" (lambda (count)
+      "i j" (lambda (count)
              "Insert a new line below with no identation."
              (interactive "p")
              (save-excursion
                (evil-move-end-of-line)
                (while (> count 0)
                  (insert "\n")
-                 (setq count (1- count)))))
-      "ik" 'evil-insert-line-above)
+                 (setq count (1- count))))))
 
     (after "magit-autoloads"
       (evil-leader/set-key
