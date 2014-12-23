@@ -112,3 +112,6 @@
 
 (setq mouse-wheel-scroll-amount '(1))
 (setq mouse-wheel-progressive-speed nil)
+
+;; clean whitespace on save
+(add-hook 'before-save-hook 'whitespace-cleanup)
