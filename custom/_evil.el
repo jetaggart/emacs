@@ -4,6 +4,7 @@
 (evil-mode 1)
 (global-evil-surround-mode 1)
 (global-evil-leader-mode t)
+(evilnc-default-hotkeys)
 
 ;; Set the initial evil state that certain major modes will be in.
 (defcustom my-evil-state-modes
@@ -51,7 +52,7 @@
       "m" 'helm-M-x
       "b d" 'kill-this-buffer
       "e v" (kbd "C-w v C-w l")
-      "e s" (kbd "C-w s C-w j") 
+      "e s" (kbd "C-w s C-w j")
       "h" help-map
       "h h" 'help-for-help-internal
       "u" 'universal-argument
