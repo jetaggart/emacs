@@ -36,6 +36,7 @@
 (depends-on "hamlet-mode")
 (depends-on "haskell-mode")
 (depends-on "helm")
+(depends-on "helm-ag")
 (depends-on "helm-descbinds")
 (depends-on "helm-projectile")
 (depends-on "inf-ruby")
