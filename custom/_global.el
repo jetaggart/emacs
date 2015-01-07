@@ -14,7 +14,7 @@
   (when (fboundp mode) (funcall mode -1)))
 
 ;; color theme
-(load-theme 'solarized-light)
+(load-theme 'solarized-light t)
 
 ;; set up initial state
 (setq inhibit-startup-screen t)
