@@ -13,6 +13,10 @@
 (dolist (mode '(menu-bar-mode tool-bar-mode scroll-bar-mode))
   (when (fboundp mode) (funcall mode -1)))
 
+;; color theme
+(load-theme 'solarized-light)
+
+;; set up initial state
 (setq inhibit-startup-screen t)
 (setq initial-major-mode 'text-mode)
 
