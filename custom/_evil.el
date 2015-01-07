@@ -30,8 +30,7 @@
 
 (defun my-enable-evil-mode ()
   (if (apply 'derived-mode-p my-evil-state-modes)
-      (turn-on-evil-mode)
-    (set-cursor-color "red")))
+      (turn-on-evil-mode)))
 (add-hook 'after-change-major-mode-hook 'my-enable-evil-mode)
 
 (define-key evil-insert-state-map [remap newline] 'newline)
@@ -39,12 +38,10 @@
 (define-key evil-insert-state-map (kbd "C-e") 'end-of-line)
 
 ;; Window commands
-(define-key evil-normal-state-map (kbd "C-w q") 'evil-window-delete)
-(define-key evil-normal-state-map (kbd "C-w o") 'delete-other-windows)
-(define-key evil-normal-state-map (kbd "C-h") 'evil-window-left)
-(define-key evil-normal-state-map (kbd "C-j") 'evil-window-down)
-(define-key evil-normal-state-map (kbd "C-k") 'evil-window-up)
-(define-key evil-normal-state-map (kbd "C-l") 'evil-window-right)
+(global-set-key (kbd "C-h") 'evil-window-left)
+(global-set-key (kbd "C-j") 'evil-window-down)
+(global-set-key (kbd "C-k") 'evil-window-up)
+(global-set-key (kbd "C-l") 'evil-window-right)
 
 (after 'evil
   ;; fix conflict with electric-indent-mode in 24.4
