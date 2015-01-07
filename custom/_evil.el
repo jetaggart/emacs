@@ -5,6 +5,7 @@
 (global-evil-surround-mode 1)
 (global-evil-leader-mode t)
 (evilnc-default-hotkeys)
+(global-evil-visualstar-mode)
 
 ;; Set the initial evil state that certain major modes will be in.
 (defcustom my-evil-state-modes
