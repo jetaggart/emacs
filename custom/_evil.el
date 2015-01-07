@@ -7,6 +7,11 @@
 (evilnc-default-hotkeys)
 (global-evil-visualstar-mode)
 
+;; configure evil-jumper mode
+(setq evil-jumper-auto-center t)
+(setq evil-jumper-auto-save-interval 3600)
+(global-evil-jumper-mode t)
+
 ;; Set the initial evil state that certain major modes will be in.
 (defcustom my-evil-state-modes
   '(fundamental-mode
