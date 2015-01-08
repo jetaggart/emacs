@@ -41,9 +41,6 @@
 (global-set-key (kbd "M-y") 'helm-show-kill-ring)
 (global-set-key (kbd "C-x b") 'helm-mini)
 (global-set-key (kbd "C-x C-f") 'helm-find-files)
-(global-set-key (kbd "C-h f") 'helm-apropos)
-(global-set-key (kbd "C-h r") 'helm-info-emacs)
-(global-set-key (kbd "C-h C-l") 'helm-locate-library)
 
 (define-key minibuffer-local-map (kbd "C-c C-l") 'helm-minibuffer-history)
 
@@ -52,8 +49,8 @@
 
 ;; use helm to list eshell history
 (add-hook 'eshell-mode-hook
-	  #'(lambda ()
-	      (substitute-key-definition 'eshell-list-history 'helm-eshell-history eshell-mode-map)))
+          #'(lambda ()
+              (substitute-key-definition 'eshell-list-history 'helm-eshell-history eshell-mode-map)))
 
 (substitute-key-definition 'find-tag 'helm-etags-select global-map)
 (setq projectile-completion-system 'helm)
