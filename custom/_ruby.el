@@ -12,15 +12,12 @@
 (add-hook 'web-mode-hook 'rspec-mode)
 (add-hook 'ruby-mode-hook 'ruby-refactor-mode-launch)
 
-(setq rspec-auto-scroll nil)
-
 (require 'ruby-tools)
 (add-hook 'haml-mode-hook 'ruby-tools-mode)
 
 (eval-after-load 'robe-mode
   '(local-key-binding (kbd "M-.") 'robe-jump))
 
-(add-hook 'after-init-hook 'inf-ruby-switch-setup) 
+(add-hook 'after-init-hook 'inf-ruby-switch-setup)
 (defadvice inf-ruby-console-auto (before activate-rvm-for-robe activate)
   (rvm-activate-corresponding-ruby))
-
