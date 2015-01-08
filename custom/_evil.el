@@ -37,10 +37,6 @@
 (define-key evil-insert-state-map (kbd "C-e") 'end-of-line)
 
 ;; Window commands
-(global-set-key (kbd "C-h") 'evil-window-left)
-(global-set-key (kbd "C-j") 'evil-window-down)
-(global-set-key (kbd "C-k") 'evil-window-up)
-(global-set-key (kbd "C-l") 'evil-window-right)
 (define-key evil-normal-state-map (kbd "C-w u") (kbd "4 0 C-w -"))
 (define-key evil-normal-state-map (kbd "C-w d") (kbd "4 0 C-w +"))
 
