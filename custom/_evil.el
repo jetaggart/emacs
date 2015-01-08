@@ -41,11 +41,14 @@
 (global-set-key (kbd "C-j") 'evil-window-down)
 (global-set-key (kbd "C-k") 'evil-window-up)
 (global-set-key (kbd "C-l") 'evil-window-right)
+(define-key evil-normal-state-map (kbd "C-w u") (kbd "4 0 C-w -"))
+(define-key evil-normal-state-map (kbd "C-w d") (kbd "4 0 C-w +"))
 
 (after 'evil
   ;; fix conflict with electric-indent-mode in 24.4
   (define-key evil-insert-state-map [remap newline] 'newline)
   (define-key evil-insert-state-map [remap newline-and-indent] 'newline-and-indent)
+
 
   (after "evil-leader-autoloads"
     (evil-leader/set-leader ",")
