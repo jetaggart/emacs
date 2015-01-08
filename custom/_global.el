@@ -119,3 +119,14 @@
 
 ;; clean whitespace on save
 (add-hook 'before-save-hook 'whitespace-cleanup)
+
+;; scroll compliation windows
+(setq compilation-scroll-output t)
+
+;; color compilation
+(require 'ansi-color)
+(defun colorize-compilation-buffer ()
+  (toggle-read-only)
+  (ansi-color-apply-on-region (point-min) (point-max))
+  (toggle-read-only))
+(add-hook 'compilation-filter-hook 'colorize-compilation-buffer)
