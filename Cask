@@ -17,6 +17,7 @@
 (depends-on "evil")
 (depends-on "evil-jumper")
 (depends-on "evil-leader")
+(depends-on "evil-matchit")
 (depends-on "evil-nerd-commenter")
 (depends-on "evil-org")
 (depends-on "evil-paredit")

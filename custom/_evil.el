@@ -6,6 +6,7 @@
 (global-evil-leader-mode t)
 (evilnc-default-hotkeys)
 (global-evil-visualstar-mode)
+(global-evil-matchit-mode 1)
 
 ;; configure evil-jumper mode
 (setq evil-jumper-auto-center t)
