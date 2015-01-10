@@ -17,6 +17,12 @@
 (setq helm-quick-update t
       helm-split-window-in-side-p t
       helm-buffers-fuzzy-matching t
+      helm-M-x-fuzzy-match t
+      helm-apropos-fuzzy-match t
+      helm-file-cache-fuzzy-match t
+      helm-locate-fuzzy-match t
+      helm-projectile-fuzzy-match t
+      helm-recentf-fuzzy-match t
       helm-move-to-line-cycle-in-source t
       helm-ff-search-library-in-sexp t
       helm-exit-idle-delay 0
