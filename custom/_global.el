@@ -131,6 +131,15 @@
   (toggle-read-only))
 (add-hook 'compilation-filter-hook 'colorize-compilation-buffer)
 
-
 ;; insert slashes in xml mode
 (setq nxml-slash-auto-complete-flag t)
+
+;; turn on emacs 24.4 electric pair mode
+(electric-pair-mode 1)
+
+;; make electric-pair-mode work on more brackets
+(setq electric-pair-pairs '(
+                            (?\" . ?\")
+                            (?\{ . ?\})
+                            (?\' . ?\')
+                            ) )
