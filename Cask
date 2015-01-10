@@ -54,7 +54,6 @@
 (depends-on "sass-mode")
 (depends-on "scss-mode")
 (depends-on "shut-up")
-(depends-on "smartparens")
 (depends-on "solarized-theme")
 (depends-on "undo-tree")
 (depends-on "web-mode")
