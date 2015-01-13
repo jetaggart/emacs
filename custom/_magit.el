@@ -166,3 +166,6 @@
     "o" 'magit-submodule-update
     "t" 'magit-tag
     "z" 'magit-stash))
+
+;; clean whitespace on git
+;; (add-hook 'before-save-hook 'whitespace-cleanup)

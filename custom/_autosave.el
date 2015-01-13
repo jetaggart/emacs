@@ -49,28 +49,17 @@
   "real auto save timer.")
 
 (defun real-auto-save()
-  (interactive)
   (shut-up
+    (interactive)
     (if real-auto-save-p
-        (progn
-          (save-excursion
-            (dolist (elem real-auto-save-alist)
-              (set-buffer elem)
-              (if (and (buffer-file-name) (buffer-modified-p))
-                  (progn
-                    (write-file (buffer-file-name))))))))))
+        (projectile-save-project-buffers))))
 
 (defun turn-on-real-auto-save()
-  (interactive)
-  (if (buffer-file-name)
-      (progn
-  (unless real-auto-save-timer
-      (progn
-        (setq real-auto-save-timer (timer-create))
-        (timer-set-time real-auto-save-timer (current-time) real-auto-save-interval)
-        (timer-set-function real-auto-save-timer 'real-auto-save)
-        (timer-activate real-auto-save-timer)))
-  (add-to-list 'real-auto-save-alist (buffer-name)))))
+    (interactive)
+    (setq real-auto-save-timer (timer-create))
+    (timer-set-time real-auto-save-timer (current-time) real-auto-save-interval)
+    (timer-set-function real-auto-save-timer 'real-auto-save)
+    (timer-activate real-auto-save-timer))
 
 (defun turn-off-real-auto-save ()
   (interactive)
