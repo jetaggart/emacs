@@ -59,10 +59,14 @@
       "h h" 'help-for-help-internal
       "u" 'universal-argument
 
-      "t l" (kbd "C-c , r")
-      "t f" (kbd "C-c , v")
-      "t s" (kbd "C-c , s")
-      "t a" (kbd "C-c , a")
+      "t l" (save-and-run 'rspec-rerun)
+      "t f" (save-and-run 'rspec-verify)
+      "t s" (save-and-run 'rspec-verify-single)
+      "t a" (save-and-run 'rspec-verify-all)
+      ;; "t l" 'rspec-rerun
+      ;; "t f" (kbd "C-c , v")
+      ;; "t s" (kbd "C-c , s")
+      ;; "t a" (kbd "C-c , a")
 
       "g g" 'helm-google-suggest
 
@@ -81,3 +85,10 @@
         "g b" 'magit-blame-mode
         "g c" 'magit-commit
         "g l" 'magit-log))))
+
+;; auto save when exiting normal mode
+(defun my-save ()
+  (if (buffer-file-name)
+      (save-buffer)))
+
+(add-hook 'evil-insert-state-exit-hook 'my-save)

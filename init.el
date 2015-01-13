@@ -10,6 +10,7 @@
 (add-to-list 'load-path "~/.emacs.d/custom")
 
 (load "_global.el")
+(load "_autosave.el")
 (load "_evil.el")
 
 (load "_exec-path-from-shell.el")
