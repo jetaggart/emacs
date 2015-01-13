@@ -93,7 +93,8 @@
     (kill-new path-with-line-number)
     (message (concat path-with-line-number " copied to clipboard"))))
 
-(define-key global-map (kbd "C-c C-l") 'copy-current-line-position-to-clipboard)
+;; quick copy of line
+(define-key global-map (kbd "C-c M-l") 'copy-current-line-position-to-clipboard)
 
 (when (display-graphic-p)
   (setq mac-command-modifier 'meta)
@@ -119,6 +120,12 @@
 
 ;; clean whitespace on save
 (add-hook 'before-save-hook 'whitespace-cleanup)
+
+;; quick window movements
+(global-set-key (kbd "C-c C-l") 'windmove-right)
+(global-set-key (kbd "C-c C-h") 'windmove-left)
+(global-set-key (kbd "C-c C-j") 'windmove-down)
+(global-set-key (kbd "C-c C-k") 'windmove-up)
 
 ;; scroll compliation windows
 (setq compilation-scroll-output t)
