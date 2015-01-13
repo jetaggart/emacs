@@ -81,7 +81,3 @@
         "g b" 'magit-blame-mode
         "g c" 'magit-commit
         "g l" 'magit-log))))
-
-; disable evil in term mode
-(add-hook 'term-mode-hook 'evil-emacs-state)
-(add-hook 'ansi-term-mode-hook 'evil-emacs-state)

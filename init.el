@@ -22,6 +22,7 @@
 (load "_projectile.el")
 (load "_ruby.el")
 (load "_sass.el")
+(load "_term.el")
 (load "_web-mode.el")
 (load "_winner.el")
 (load "_yasnippet.el")

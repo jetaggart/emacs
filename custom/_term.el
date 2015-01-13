@@ -1,4 +1,4 @@
-(defun eshell-here ()
+(defun term-here ()
   "Opens up a new shell in the directory associated with the
 current buffer's file. The eshell is renamed to match that
 directory to make multiple eshell windows easier."
@@ -10,17 +10,9 @@ directory to make multiple eshell windows easier."
          (name   (car (last (split-string parent "/" t)))))
     (split-window-vertically (- height))
     (other-window 1)
-    (eshell "new")
-    (rename-buffer (concat "*eshell: " name "*"))
+    (ansi-term "bash")))
 
-    (insert (concat "ls"))
-    (eshell-send-input)))
+(global-set-key (kbd "C-!") 'term-here)
 
-(global-set-key (kbd "C-c C-!") 'eshell-here)
-
-; define control p, control n and the up/down arrow
-(defun my-eshell-hook ()
-  (define-key eshell-mode-map (kbd "C-p") 'eshell-previous-matching-input-from-input)
-  (define-key eshell-mode-map (kbd "C-n") 'eshell-next-matching-input-from-input))
-
-(add-hook 'eshell-mode-hook 'my-eshell-hook)
+; defult to emacs mode in term mode
+(evil-set-initial-state 'term-mode 'emacs)
