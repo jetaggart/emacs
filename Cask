@@ -27,6 +27,8 @@
 (depends-on "git-rebase-mode")
 (depends-on "gnuplot")
 (depends-on "goto-chg")
+(depends-on "gradle-mode")
+(depends-on "groovy-mode")
 (depends-on "haml-mode")
 (depends-on "hamlet-mode")
 (depends-on "haskell-mode")
