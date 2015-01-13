@@ -93,7 +93,7 @@
     (kill-new path-with-line-number)
     (message (concat path-with-line-number " copied to clipboard"))))
 
-(define-key global-map (kbd "M-l") 'copy-current-line-position-to-clipboard)
+(define-key global-map (kbd "C-c C-l") 'copy-current-line-position-to-clipboard)
 
 (when (display-graphic-p)
   (setq mac-command-modifier 'meta)
