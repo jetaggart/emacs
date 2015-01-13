@@ -1,0 +1,8 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: public method
+# key: m
+# binding: direct-keybinding
+# --
+${1:public} ${2:void} $3($4) {
+    $5
+}
