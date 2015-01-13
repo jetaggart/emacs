@@ -49,9 +49,9 @@
   "real auto save timer.")
 
 (defun real-auto-save()
-  (shut-up
-    (interactive)
-    (if real-auto-save-p
+  (interactive)
+  (if real-auto-save-p
+      (shut-up
         (projectile-save-project-buffers))))
 
 (defun turn-on-real-auto-save()
