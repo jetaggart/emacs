@@ -10,7 +10,6 @@
 (add-to-list 'load-path "~/.emacs.d/custom")
 
 (load "_global.el")
-(load "_evil.el")
 
 (load "_exec-path-from-shell.el")
 (load "_eshell.el")
@@ -18,6 +17,7 @@
 (load "_helm.el")
 (load "_javascript.el")
 (load "_magit.el")
+(load "_multiplecursors.el")
 (load "_org.el")
 (load "_projectile.el")
 (load "_ruby.el")

@@ -1,5 +1,4 @@
 (require 'org)
-(require 'evil-org)
 (require 'ob-latex)
 (require 'ob-gnuplot)
 
@@ -33,6 +32,3 @@
 	 "* TODO %?")
         ("j" "Journal" entry (file+datetree "~/org/journal.org")
 	 "* %?\nEntered on %U\n  %i\n  %a")))
-
-(add-hook 'org-mode-hook 'evil-org-mode) ;; only load with org-mode
-(add-hook 'org-mode-hook 'turn-on-auto-fill)

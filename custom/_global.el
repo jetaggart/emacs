@@ -60,7 +60,6 @@
 (setq x-select-enable-clipboard t)
 
 (define-key global-map (kbd "RET") 'newline-and-indent)
-(define-key global-map (kbd "C-x C-c") nil)
 
 ;; don't gc so much, this is the future!
 (setq gc-cons-threshold 20000000)

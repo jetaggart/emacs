@@ -14,5 +14,3 @@ directory to make multiple eshell windows easier."
 
 (global-set-key (kbd "C-!") 'term-here)
 
-; defult to emacs mode in term mode
-(evil-set-initial-state 'term-mode 'emacs)
