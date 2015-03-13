@@ -122,7 +122,10 @@
 
 
 ;; quick window movements
-(windmove-default-keybindings 'meta)
+(global-set-key (kbd "C-M-h") 'windmove-left)
+(global-set-key (kbd "C-M-l") 'windmove-right)
+(global-set-key (kbd "C-M-k") 'windmove-up)
+(global-set-key (kbd "C-M-j") 'windmove-down)
 
 ;; scroll compliation windows
 (setq compilation-scroll-output t)
