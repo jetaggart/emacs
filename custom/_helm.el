@@ -8,6 +8,9 @@
 
 
 (setq helm-command-prefix-key "C-c h")
+(global-set-key (kbd "M-p") 'helm-projectile-find-file)
+(global-set-key (kbd "M-P") 'helm-M-x)
+(global-set-key (kbd "M-R") 'helm-etags-select)
 
 (when (executable-find "curl")
   (setq helm-google-suggest-use-curl-p t))
