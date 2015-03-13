@@ -59,15 +59,6 @@
       "h h" 'help-for-help-internal
       "u" 'universal-argument
 
-      "t l" (save-and-run 'rspec-rerun)
-      "t f" (save-and-run 'rspec-verify)
-      "t s" (save-and-run 'rspec-verify-single)
-      "t a" (save-and-run 'rspec-verify-all)
-      ;; "t l" 'rspec-rerun
-      ;; "t f" (kbd "C-c , v")
-      ;; "t s" (kbd "C-c , s")
-      ;; "t a" (kbd "C-c , a")
-
       "g g" 'helm-google-suggest
 
       "i j" (lambda (count)
