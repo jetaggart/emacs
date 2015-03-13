@@ -20,6 +20,9 @@
 (setq inhibit-startup-screen t)
 (setq initial-major-mode 'text-mode)
 
+;; global undo tree
+(global-undo-tree-mode)
+
 ;; turn on electric-indent-mode for both 24.3 and 24.4
 (electric-indent-mode)
 
@@ -119,7 +122,7 @@
 
 
 ;; quick window movements
-(windmove-default-keybindings 'super)
+(windmove-default-keybindings 'meta)
 
 ;; scroll compliation windows
 (setq compilation-scroll-output t)
@@ -144,3 +147,11 @@
                             (?\{ . ?\})
                             (?\' . ?\')
                             ) )
+
+;; emacs os x bindings
+(global-set-key (kbd "s-<left>") 'backward-word)
+(global-set-key (kbd "s-<right>") 'forward-word)
+(global-set-key (kbd "M-z") 'undo-tree-undo)
+(global-set-key (kbd "M-Z") 'undo-tree-redo)
+(global-set-key (kbd "M-c") 'kill-ring-save)
+(global-set-key (kbd "M-v") 'yank)
