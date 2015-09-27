@@ -43,7 +43,8 @@
                  ("begin" "$1" "$" "$$" "\\(" "\\["))))
  '(ring-bell-function (quote ignore) t)
  '(safe-local-variable-values (quote ((hamlet/basic-offset . 4))))
- '(tab-width 2))
+ '(tab-width 2)
+ '(todotxt-file "/Users/psylinse/Dropbox/todo/todo.txt" nil (todotxt)))
 
 
 (custom-set-faces

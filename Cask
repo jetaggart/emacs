@@ -50,6 +50,7 @@
 (depends-on "scss-mode")
 (depends-on "shut-up")
 (depends-on "solarized-theme")
+(depends-on "todotxt")
 (depends-on "undo-tree")
 (depends-on "web-mode")
 (depends-on "yasnippet")

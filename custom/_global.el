@@ -178,3 +178,6 @@
 (global-set-key (kbd "M-Z") 'undo-tree-redo)
 (global-set-key (kbd "M-c") 'kill-ring-save)
 (global-set-key (kbd "M-v") 'yank)
+
+;; todos
+(global-set-key (kbd "C-x t") 'todotxt)
