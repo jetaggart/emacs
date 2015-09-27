@@ -25,6 +25,7 @@
 (setq org-default-notes-file (concat org-directory "/todo.org"))
 (define-key global-map "\C-cc" 'org-capture)
 (setq org-agenda-files (quote ("~/org/todo.org")))
+(setq org-refile-targets '((org-agenda-files . (:maxlevel . 6))))
 (global-set-key (kbd "C-c o")
                 (lambda () (interactive) (find-file "~/org/notes.org")))
 
