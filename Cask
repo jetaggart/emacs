@@ -31,6 +31,7 @@
 (depends-on "magit")
 (depends-on "markdown-mode")
 (depends-on "multiple-cursors")
+(depends-on "org-journal")
 (depends-on "org-plus-contrib")
 (depends-on "package-build")
 (depends-on "pallet")
