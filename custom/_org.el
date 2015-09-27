@@ -25,11 +25,11 @@
 (setq org-default-notes-file (concat org-directory "/todo.org"))
 (define-key global-map "\C-cc" 'org-capture)
 (setq org-agenda-files (quote ("~/org/todo.org")))
+(global-set-key (kbd "C-c o")
+                (lambda () (interactive) (find-file "~/org/notes.org")))
 
 (setq org-capture-templates
-      '(("t" "Todo" entry (file+headline "~/org/todo.org" "Inbox")
-   "* TODO %?")
-        ("s" "Scheduled Todo" entry (file+headline "~/org/todo.org" "Scheduled")
-   "* TODO %?")
-        ("j" "Journal" entry (file+datetree "~/org/journal.org")
-   "* %?\nEntered on %U\n  %i\n  %a")))
+      '(("t" "Todo" entry (file+headline "~/org/todo.org" "Inbox") "* TODO %?")
+        ("n" "Note" entry (file "~/org/notes.org") "* %?")
+        ("s" "Scheduled Todo" entry (file+headline "~/org/todo.org" "Scheduled") "* TODO %?")
+        ("j" "Journal" entry (file+datetree "~/org/journal.org") "* %?\nEntered on %U\n  %i\n  %a")))
